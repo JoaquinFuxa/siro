@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Método de Pago</title>
+    <link rel="stylesheet" href="stylesmethod.css" />
+  </head>
+  <body>
+    <main class="payment-method-container">
+      <!-- Rectángulo de selección de método de pago -->
+      <div class="payment-method-selection">
+        <h2>Seleccione método de pago</h2>
+        <form action="#" method="POST">
+          <label>
+            <input type="radio" name="payment_method" value="debito" /> TARJETA
+            DE DÉBITO
+          </label>
+          <label>
+            <input type="radio" name="payment_method" value="credito" /> TARJETA
+            DE CRÉDITO
+          </label>
+          <label>
+            <input type="radio" name="payment_method" value="qr" /> QR -
+            BILLETERAS
+          </label>
+          <label>
+            <input type="radio" name="payment_method" value="transferencia" />
+            DEBIN
+          </label>
+        </form>
+        <!-- Botones de Confirmar y Cancelar -->
+        <div class="payment-buttons">
+          <button
+            class="confirm-button"
+            type="submit"
+            onclick="window.location.href='pago.html'"
+          >
+            Confirmar
+          </button>
+          <button
+            class="cancel-button"
+            type="reset"
+            onclick="window.location.href='index.html'"
+          >
+            Cancelar
+          </button>
+        </div>
+      </div>
+
+      <!-- Rectángulo de información de deuda -->
+      <div class="debt-info">
+        <h2>Resumen del Pago</h2>
+        <p><strong>Empresa:</strong> CREMONA</p>
+        <p><strong>Deuda:</strong> $12,000</p>
+        <p><strong>Código de Pago Electrónico:</strong> 2000012343455</p>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Código de Pago Electrónico</title>
+    <link rel="stylesheet" href="stylespayment.css" />
+  </head>
+  <body>
+    <main class="payment-container">
+      <div class="payment-box">
+        <h2>Ingrese el Código de Pago Electrónico</h2>
+        <form action="#" method="POST">
+          <input
+            type="text"
+            name="payment_code"
+            placeholder="Código de Pago"
+            required
+          />
+          <div class="debt-info">
+            <p><strong>Deudas encontradas:</strong></p>
+            <label>
+              <input type="radio" name="debt" value="cremona" />
+              Empresa: CREMONA - Deuda: $12,000
+            </label>
+            <label>
+              <input type="radio" name="debt" value="macrosol" />
+              Empresa: MACROSOL - Deuda: $8,500
+            </label>
+          </div>
+          <button
+            class="cta-button"
+            onclick="window.location.href='payment-method.html'"
+          >
+            Continuar
+          </button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

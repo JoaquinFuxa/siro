@@ -1,0 +1,106 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body */
+  body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, rgba(13, 61, 38, 0.9), rgba(43, 245, 127, 0.6)), 
+    url('https://get.pxhere.com/photo/product-job-office-employment-businessperson-learning-collaboration-white-collar-worker-technology-business-hand-sitting-computer-software-engineering-electronic-device-company-laptop-management-training-1533109.jpg') no-repeat center center fixed;
+background-size: cover;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    margin: 0;
+  }
+  
+  /* Contenedor principal */
+  .payment-method-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;
+    gap: 20px; /* Agrega un espacio entre los rectángulos */
+  }
+  
+  /* Rectángulo para selección de método de pago */
+  .payment-method-selection {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 65%; /* Ajusta el ancho */
+    height: 300px; /* Altura fija */
+  }
+  
+  /* Título y opciones de método de pago */
+  .payment-method-selection h2 {
+    margin-bottom: 15px;
+  }
+  
+  .payment-method-selection label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  /* Rectángulo para información de la deuda */
+  .debt-info {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%; /* Estrecha el rectángulo */
+    height: 300px; /* Altura fija igual que el otro */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .debt-info h2 {
+    margin-bottom: 15px;
+  }
+  
+  .debt-info p {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+  
+  /* Botones de Confirmar y Cancelar */
+  .payment-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+  }
+  
+  button {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .confirm-button {
+    background-color: #1DB954; /* Verde */
+    color: white;
+  }
+  
+  .confirm-button:hover {
+    background-color: #16a34a;
+  }
+  
+  .cancel-button {
+    background-color: #f44336; /* Rojo */
+    color: white;
+  }
+  
+  .cancel-button:hover {
+    background-color: #e53935;
+  }
+  
